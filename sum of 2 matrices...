@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int i,m,n,j;
+    printf("enter the number of rows   ");
+    scanf("%d",&m);
+    printf("enter the number of column  ");
+    scanf("%d",&n);
+    int arr[m][n];
+    int brr[m][n];
+    int crr[m][n];
+    for (i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            printf("A[%d][%d]=",i,j);
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("\n");
+    //2nd matrix................
+    for (i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            printf("A[%d][%d]=",i,j);
+            scanf("%d",&brr[i][j]);
+        }
+        printf("\n");
+    }
+    // getting 3rd one...............
+    for (i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            crr[i][j]=arr[i][j]+brr[i][j];
+            printf("%d",crr[i][j]);
+        }
+        printf("\n");
+    }
+}
